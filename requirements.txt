@@ -1,4 +1,2 @@
 python-telegram-bot==20.7
 requests==2.31.0
-gspread==6.0.2
-google-auth==2.27.0
