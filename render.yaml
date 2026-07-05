@@ -1,0 +1,15 @@
+services:
+  - type: worker
+    name: sunray-warehouse-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: OPENROUTER_KEY
+        sync: false
+      - key: GOOGLE_CREDENTIALS
+        sync: false
+      - key: SPREADSHEET_ID
+        sync: false
